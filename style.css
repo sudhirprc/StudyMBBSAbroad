@@ -1,6 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     padding-top: 64px; /* Adjust to prevent content from being hidden under navbar */
 }
+
+.apply-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.apply-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 40%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.apply-btn:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#menu {
+  transition: all 0.3s ease-in-out;
+}
+
 
 @media (max-width: 640px) {
     .cta-button {

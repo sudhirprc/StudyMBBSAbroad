@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Mobile Menu Toggle
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-        document.getElementById("menu").classList.toggle("hidden");
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("flex");
     });
 
     
@@ -22,6 +26,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+        // Smooth Scrolling for "Apply Now" Button in Hero Section
+        const applyNowButton = document.querySelector(".apply-btn");
+        if (applyNowButton) {
+            applyNowButton.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetSection = document.getElementById("lead-form");
+    
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        }
+    
 
     // Navbar Link Highlighting on Scroll
     const sections = document.querySelectorAll("section");
