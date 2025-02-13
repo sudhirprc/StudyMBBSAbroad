@@ -1,0 +1,14 @@
+body {
+    padding-top: 64px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+@media (max-width: 640px) {
+    .cta-button {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+    }
+  }
+    

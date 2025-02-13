@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Apply now to study MBBS abroad in top universities across Russia, Uzbekistan, Kazakhstan, and more. Get expert guidance on admissions.">
+    <meta name="keywords" content="MBBS abroad, study medicine, medical universities, admissions, Russia, Uzbekistan, Kazakhstan">
+    <meta name="description" content="Fill out our lead capture form to explore Study MBBS Abroad opportunities. Secure your medical career today!">
+    <meta name="keywords" content="Study MBBS Abroad, Medical Education, MBBS Admission, Overseas Medical Universities">
+    <meta name="author" content="University Insights">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .error { color: red; font-size: 0.875rem; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+    
+    
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-blue-900">University Insights</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 font-semibold md:static absolute top-full left-0 w-full bg-white md:bg-transparent md:w-auto">
+                <li><a href="#hero" class="nav-link block px-4 py-2 md:inline hover:text-blue-600">Home</a></li>
+                <li><a href="#why-study" class="nav-link block px-4 py-2 md:inline hover:text-blue-600">Why MBBS Abroad</a></li>
+                <li><a href="#top-countries" class="nav-link block px-4 py-2 md:inline hover:text-blue-600">Top Countries</a></li>
+                <li><a href="#lead-form" class="nav-link block px-4 py-2 md:inline hover:text-blue-600">Apply Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-24 px-6 flex flex-col items-center justify-center mt-16">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-6xl font-extrabold leading-tight">Your Journey to a Medical Career Starts Here</h1>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">Study MBBS in top international universities. Affordable tuition, global recognition, and a seamless admission process.</p>
+            <a href="#lead-form" class="mt-6 inline-block bg-white text-blue-700 px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl text-xl">
+                Apply Now
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Why Study MBBS Abroad -->
+    <section id="why-study" class="py-16 px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Why Study MBBS Abroad?</h2>
+        <div class="grid md:grid-cols-3 gap-8 mt-10 max-w-5xl mx-auto">
+            <div class="p-6 bg-white shadow-lg rounded-xl text-center border border-gray-200 hover:shadow-xl transition bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+                <h3 class="text-xl font-semibold">Affordable Tuition Fees</h3>
+                <p class="mt-2 text-white">High-quality education at a lower cost.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-xl text-center border border-gray-200 hover:shadow-xl transition bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+                <h3 class="text-xl font-semibold">Globally Recognized Degrees</h3>
+                <p class="mt-2 text-white">Earn a degree accepted worldwide.</p>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-xl text-center border border-gray-200 hover:shadow-xl transition bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+                <h3 class="text-xl font-semibold">No Entrance Exams Required</h3>
+                <p class="mt-2 text-white">Apply without hassle and start studying.</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- Top Countries Section -->
+  <section id="top-countries" class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">Top Countries for MBBS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Country Cards -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/russia.jpg" alt="Russia" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Russia</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/uzbekistan.jpg" alt="Uzbekistan" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Uzbekistan</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/kazakhstan.jpg" alt="Kazakhstan" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Kazakhstan</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/phillipines.jpg" alt="Philippines" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Philippines</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/georgia.jpg" alt="Georgia" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Georgia</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/kyrgystan.jpg" alt="Kyrgyzstan" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Kyrgyzstan</span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/egypt.jpg" alt="Egypt" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all duration-300 group-hover:opacity-0">
+                    <span class="text-white text-2xl font-bold">Egypt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+         <!-- Admission Process & Eligibility -->
+    <section id="admission-process" class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Admission Process & Eligibility</h2>
+        <div class="bg-gradient-to-r from-blue-50 to-blue-100 shadow-xl rounded-lg p-8">
+            <ol class="list-decimal list-inside space-y-6 text-gray-800 text-lg">
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">1.</span>
+                    <div><strong>Research & Choose:</strong> Select the country and university that best suits your needs.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">2.</span>
+                    <div><strong>Check Eligibility:</strong> Ensure you meet the academic and language requirements for admission.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">3.</span>
+                    <div><strong>Prepare Documents:</strong> Gather necessary documents like transcripts, passport, and medical certificates.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">4.</span>
+                    <div><strong>Submit Application:</strong> Apply online or through a consultant with the required paperwork.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">5.</span>
+                    <div><strong>Receive Admission Letter:</strong> Once accepted, you will receive an official admission letter.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">6.</span>
+                    <div><strong>Apply for Visa:</strong> Submit your student visa application with all necessary documents.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">7.</span>
+                    <div><strong>Plan Your Travel:</strong> Book flights and arrange accommodation before departure.</div>
+                </li>
+                <li class="p-4 bg-white shadow-md rounded-lg flex items-start">
+                    <span class="text-blue-600 font-bold text-2xl mr-4">8.</span>
+                    <div><strong>Begin Your Journey:</strong> Attend orientation and start your MBBS program abroad!</div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-5 right-5 bg-blue-700 text-white p-3 rounded-full shadow-lg hidden hover:bg-blue-800 transition-transform transform hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <!-- Lead Generation Form -->
+    <section id="lead-form" class="py-16 bg-blue-50 px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Apply Now</h2>
+        <form id="leadForm" class="max-w-lg mx-auto mt-8 bg-white p-10 rounded-2xl shadow-2xl border border-gray-200">
+            <label for="fullName" class="block font-semibold text-gray-700">Full Name</label>
+            <input type="text" id="fullName" placeholder="Full Name" class="w-full p-4 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            
+            <label for="email" class="block font-semibold text-gray-700">Email</label>
+            <input type="email" id="email" placeholder="Email" class="w-full p-4 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            
+            <label for="phone" class="block font-semibold text-gray-700">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-4 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            
+            <label for="country" class="block font-semibold text-gray-700">Country Preference</label>
+            <select id="country" class="w-full p-4 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <option>Select Country Preference</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            
+            <button  onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Submit Lead Form'});" type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-4 rounded-lg font-semibold shadow-lg hover:opacity-90 transition transform hover:scale-105">Submit</button>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-blue-900 text-white text-center py-6 mt-12">
+        <p class="text-sm">&copy; 2025 University Insights. All Rights Reserved.</p>
+    </footer>
+    
+    
+    
+    
+</body>
+</html>
